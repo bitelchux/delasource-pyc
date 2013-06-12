@@ -32,4 +32,5 @@
       <icon src="icon.png" gap:platform="winphone"   gap:role="background" />
       <gap:splash src="splash.png" />
       <plugin name="Notification" value="org.apache.cordova.Notification"/>
+      <access origin="*" />
 </widget>

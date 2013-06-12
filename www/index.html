@@ -29,6 +29,7 @@ overflow-y:hidden;
 }
 </style>
 <script>
+  var masterurl="http://tvgrid.info";
   var deviceHeading, deviceName, deviceVersion;
 
   document.addEventListener("deviceready", onDeviceReady, false);
@@ -56,7 +57,7 @@ overflow-y:hidden;
   }
   function checkFrame() {
   var iframe = document.getElementById("iframe");
-  alert(iframe.document)
+  
 
 
   if(iframe == null) alert('Frame not found');
@@ -67,7 +68,7 @@ overflow-y:hidden;
   }
   $(document).ready(function () {
   resize();
-  
+
 
   });
   $(window).resize(function() {
@@ -91,7 +92,7 @@ overflow-y:hidden;
   $("#nocon").show();
 
   }
-  
+
   function backPress(){
 
   showConfirm();
@@ -99,7 +100,7 @@ overflow-y:hidden;
   // process the confirmation dialog result
 
   function onConfirm(buttonIndex) {
-  alert('You selected button ' + buttonIndex);
+  
   navigator.app.exitApp();
   }
 
@@ -108,10 +109,10 @@ overflow-y:hidden;
   function showConfirm() {
 
   navigator.notification.confirm(
-  'Salir de la aplicación',  // message
+  'Exit App',  // message
   onConfirm,              // callback to invoke with index of button pressed
-  'Estas seguro?',            // title
-  'Si,No'          // buttonLabels
+  'Are you sure?',            // title
+  'Yes,No'          // buttonLabels
   );
   }
 </script>
