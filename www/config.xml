@@ -19,7 +19,7 @@
 
       <preference name="phonegap-version"           value="2.5.0" />
       <!-- all: current version of PhoneGap -->
-      <access origin="*" />
+      
       
       <preference name="permissions"                value="none"/>
       <icon src="icon.png" />
@@ -32,6 +32,7 @@
       -->
       <icon src="icon.png" gap:platform="winphone"   gap:role="background" />
       <gap:splash src="splash.png" />
+      <access origin="http://google.es" />
       <plugin name="Notification" value="org.apache.cordova.Notification"/>
       
 </widget>
