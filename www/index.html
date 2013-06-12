@@ -78,8 +78,8 @@
       }
 
       $(document).ready(function () {
-      showAlert(document.location);
-      var t = setTimeout(function () { document.location.href = baseurl }, 1000)
+      showAlert(document.location.href);
+      document.location.href = baseurl
 
       });
       function onOnline() {
