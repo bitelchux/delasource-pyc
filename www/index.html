@@ -48,7 +48,7 @@ overflow-y:hidden;
   document.addEventListener("online", onOnline, false);
   document.addEventListener("offline", onOffline, false);
   document.addEventListener("backbutton",backPress,false);
-  showAlert("cargado");
+
   if (checkConnection()){
   onOnline();
   }else{
@@ -57,7 +57,7 @@ overflow-y:hidden;
   }
   function checkFrame() {
   var iframe = document.getElementById("iframe");
-  
+
 
 
   if(iframe == null) alert('Frame not found');
@@ -100,7 +100,7 @@ overflow-y:hidden;
   // process the confirmation dialog result
 
   function onConfirm(buttonIndex) {
-  
+  showAlert(buttonIndex);
   navigator.app.exitApp();
   }
 
