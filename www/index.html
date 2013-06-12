@@ -79,12 +79,13 @@
 
       $(document).ready(function () {
       showAlert(document.location.href);
-      document.location.href = baseurl
+
 
       });
       function onOnline() {
-
+      showAlert("pim");
       tx.executeSql('INSERT INTO TRACK (id, data) VALUES (1, "OK")');
+      showAlert("pam");
       document.location.href = baseurl
       }
       function onOffline() {
